@@ -15,13 +15,13 @@ void main() {
   pokemon['hp'] > 0 ? true : false;
 
   //* Accediendo a las propiedades individuales del Mapa
-  // Construir string de habilidades con índices
+  //* Construir string de habilidades con índices
   String habilidades = '';
   (pokemon['abilities'] as Map).forEach((key, value) {
     habilidades += '\n    $key: $value';
   });
 
-  // Construir string de sprites con índices
+  //* Construir string de sprites con índices
   String sprites = '';
   List listaSprites = pokemon['sprites'] as List;
   for (int i = 0; i < listaSprites.length; i++) {
